@@ -17,7 +17,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args:
-            sonar.java.binaries=Task_2/StaticAnalysisExample/bin/_package_1/
+            sonar.java.binaries: Task_2/StaticAnalysisExample/bin/_package_1/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
